@@ -1,11 +1,47 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <div class="div">
+      <img
+        alt="Vue Logo"
+        class="logo"
+        src="@/assets/logo.svg"
+        width="64"
+        height="64"
+      />
+      <h2>Vue.js</h2>
+    </div>
+    <div class="search">
+      <font-awesome-icon icon="search" />
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="navigator">
+      <RouterLink to="">Summoner</RouterLink>
+      <RouterLink to="">Champions</RouterLink>
+      <RouterLink to="">Ranked</RouterLink>
+      <button>
+        <font-awesome-icon icon="translate" />
+      </button>
+      <a href="github.com/beckerin/nothing-else-but-repos">
+        <font-awesome-icon icon="github" />
+      </a>
+      <a href="github.com/beckerin/nothing-else-but-repos">
+        <font-awesome-icon icon="discord" />
+      </a>
+    </div>
+  </header>
+
+  <!-- <header>
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -15,7 +51,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
-  </header>
+  </header> -->
 
   <RouterView />
 </template>
